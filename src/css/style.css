@@ -1,0 +1,108 @@
+body {
+  background-color: #292F36;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  color: #F5F5F5;
+}
+
+h1 {
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#field {
+  width: 334px;
+  height: 30px;
+}
+
+#validate-button {
+  width: 100px;
+  height: 35px;
+  background-color: #4ECDC4;
+  color: #F5F5F5;
+  font-weight: 700;
+  border: 0;
+}
+
+#validate-button:hover {
+  background-color: #FE5F55;
+}
+
+#validator-container {
+  position: relative;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+#payment-systems-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.payment-system {
+  display: flex;
+  margin-right: 2px;
+  margin-left: 2px;
+  width: 64px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 64px;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+
+#payment-system-mir {
+  background-image: url(../img/mir.png);
+}
+
+#payment-system-visa {
+  background-image: url(../img/visa.png);
+}
+
+#payment-system-mastercard {
+  background-image: url(../img/mastercard.png);
+}
+
+#payment-system-maestro {
+  background-image: url(../img/maestro.png);
+}
+
+#payment-system-amexp {
+  background-image: url(../img/amexp.png);
+}
+
+#payment-system-undef {
+  box-sizing: border-box;
+  padding-left: 3px;
+  background-color: #FE5F55;
+  font-size: 11px;
+}
+
+.result {
+  display: none;
+  font-weight: 700;
+}
+
+#not-valid {
+  color: #FE5F55;
+}
+
+#valid {
+  color: #4ECDC4;
+}

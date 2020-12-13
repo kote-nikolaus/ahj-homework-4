@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Card Number Validator</title>
+</head>
+<body>
+  <h1>Card Number Validator</h1>
+  <div id="validator-container">
+    <ul id='payment-systems-list'>
+      <li class='payment-system' id='payment-system-mir'></li>
+      <li class='payment-system' id='payment-system-visa'></li>
+      <li class='payment-system' id='payment-system-mastercard'></li>
+      <li class='payment-system' id='payment-system-maestro'></li>
+      <li class='payment-system' id='payment-system-amexp'></li>
+      <li class='payment-system' id='payment-system-undef'>Undefined payment system</li>
+    </ul>
+    <input type='text' id='field' placeholder='Your card number'>
+    <button class='validate-button' id='validate-button'>Validate</button>
+    <p class='result' id='not-valid'>Card number is not correct</p>
+    <p class='result' id='valid'>Everything is ok!</p>
+  </div>
+</body>
+</html>
