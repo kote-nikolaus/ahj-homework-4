@@ -1,3 +1,6 @@
+/* eslint-disable radix */
+/* eslint-disable  no-restricted-globals */
+
 const mir = document.getElementById('payment-system-mir');
 const visa = document.getElementById('payment-system-visa');
 const mastercard = document.getElementById('payment-system-mastercard');
@@ -12,10 +15,10 @@ const notValid = document.getElementById('not-valid');
 const valid = document.getElementById('valid');
 
 export function luhnAlgorithm(number) {
-  number = String(number);
-  let sum = parseInt(number.charAt(number.length - 1));
-  for (let i = 0; i < number.length - 1; i += 1) {
-    let value = parseInt(number.charAt(i));
+  const strNumber = String(number);
+  let sum = parseInt(strNumber.charAt(strNumber.length - 1));
+  for (let i = 0; i < strNumber.length - 1; i += 1) {
+    let value = parseInt(strNumber.charAt(i));
     if (i % 2 === 0) {
       value *= 2;
     }
