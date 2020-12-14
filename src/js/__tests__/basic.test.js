@@ -34,3 +34,33 @@ test.each([
     expect(definePaymentSystem(input)).toBe(expected);
   },
 );
+
+import puppeteer from 'puppeteer';
+jest.setTimeout(30000);
+describe('card number validator', () => {
+  let browser = null;
+  let page = null;
+  const baseUrl = 'https://localhost:9000';
+  beforeAll(async () => {
+    browser = await puppeteer.launch({
+      //headless: false,
+      //slowMo: 100,
+      //devtools: true,
+    });
+    page = await browser.newPage();
+  });
+  afterAll(async () => {
+    await browser.close();
+});
+  describe('card number validator', () => {
+    test('should validate card number', async () => {
+      await page.goto(baseUrl);
+      const form = await page.$('[id=validator-container]');
+      const input = await form.$('[id=field]');
+      await input.type('5105 1051 0510 5100');
+      const submit = await form.$('[id=validate-button]');
+      submit.click();
+      //await page.waitForSelector('[data-id=innogrn-input].valid');
+    });
+  });
+});
