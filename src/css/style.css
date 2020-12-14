@@ -68,19 +68,23 @@ h1 {
 
 
 #payment-system-mir {
-  background-image: url(../img/mir.png);
+  background-image: url('../img/mir.png');
 }
 
 #payment-system-visa {
-  background-image: url(../img/visa.png);
+  background-image: url('../img/visa.png');
+}
+
+#payment-system-mastercard {
+  background-image: url('../img/mcard.png');
 }
 
 #payment-system-maestro {
-  background-image: url(../img/maestro.png);
+  background-image: url('../img/maestro.png');
 }
 
 #payment-system-amexp {
-  background-image: url(../img/amexp.png);
+  background-image: url('../img/amexp.png');
 }
 
 #payment-system-undef {
