@@ -75,10 +75,6 @@ h1 {
   background-image: url(../img/visa.png);
 }
 
-#payment-system-mastercard {
-  background-image: url(../img/mcard.png);
-}
-
 #payment-system-maestro {
   background-image: url(../img/maestro.png);
 }
